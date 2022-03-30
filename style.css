@@ -1,15 +1,24 @@
 /* This is the nav bar and header */
+body{
+    background-image: linear-gradient(black, black 1%, white, white 99%);
+}
+
 header {
-    background-color: gray;
+    background-color: #202020;
     height: 75px;
+
 }
 
 #title {
-    font-size: larger;
-    display: flex;
-    background-color: aliceblue;
-    flex-wrap: wrap;
+    font-size: 75px;
+    font-family: 'Nanum Gothic Coding';
+    color: aliceblue;
     max-width: max-content;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    padding: 10px;
+
   }
 
 .navlist {
@@ -20,11 +29,16 @@ header {
 
 li {
     position: relative;
-    top: 20px;
     left: -10px;
-    margin: 10px;
+    top: -55px;
+    padding: 10px;
     font-size: large;
-    background-color: aliceblue;
+   
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 li:hover {
@@ -36,31 +50,35 @@ li:hover {
 /* This is the hero img */
 
 
+
 .heroimg {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    /* object-position */
 
 }
 
-.welcomemessage {
-    display: flex;
-    justify-content: center;
-    color: lime;
-    font-size: x-large;
-
-}
-
+/* welcomemessage, when moving the text, breaks display and makes it too wide */
 .welcomemessage {
     position: relative;
-    margin-left: 500px;
-    margin-right: 500px;
-    display: block;
     color: aliceblue;
     top: -150px;
+    font-size: x-large;
+    max-width: fit-content;
+    display: inline-flex;
+    font-family: 'Courier New', Courier, monospace;
+    /* what does inline flex do? is this the solution? */
+    
 }
 
-/* The meat of the page */
+
+span{
+    font-family: "Dancing Script";
+}
+
+/* Also breaks the page when adjusting size, the problem with both of these issues is that we are setting an x, y coordinate...*/
+/* overflow?????? */
 aside {
    
     padding: 40px;
@@ -69,18 +87,12 @@ aside {
     border-right-style: solid;
     font-size: 30px;
     display: flex;
-    margin: 10px;
     flex-flow: column;
     max-width: 60px;
 }
+/* 
+aside:scroll {} want things to fade into being */
 
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-}
 
 .wrapper p {
     font-size: larger;
@@ -88,11 +100,124 @@ aside {
     position: relative;
     left: 200px;
     top: -100px;
-    max-width: 1440px;
+    max-width: fit-content;
     
 }
 
-/* #about p {
-
+#c{
+    color: #FB366D;
+    
+        animation: fadeIn ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
-*/
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+#o{
+    color: #FD9208;
+    animation: fadeIn ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+    
+
+
+#l{
+    color: #F9F32C;
+    animation: fadeIn ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#O{
+    color: #70DDE8;
+    animation: fadeIn ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#u{ 
+    color: #9F83B7;
+    animation: fadeIn ease 5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#r{
+    color: #EF291E;
+    animation: fadeIn ease 6.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.wrapper img {
+    width: 400px;
+}
+
+.centered {
+    position: relative;
+    left: 50rem;
+    top: -300px;
+    
+}
+
+/* percentages vs using */

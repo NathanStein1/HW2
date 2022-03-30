@@ -1,0 +1,98 @@
+/* This is the nav bar and header */
+header {
+    background-color: gray;
+    height: 75px;
+}
+
+#title {
+    font-size: larger;
+    display: flex;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    max-width: max-content;
+  }
+
+.navlist {
+    display: flex;
+    justify-content: end;
+    
+}
+
+li {
+    position: relative;
+    top: 20px;
+    left: -10px;
+    margin: 10px;
+    font-size: large;
+    background-color: aliceblue;
+}
+
+li:hover {
+    color: rgb(221, 81, 46);
+    cursor: pointer;
+    
+}
+
+/* This is the hero img */
+
+
+.heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.welcomemessage {
+    display: flex;
+    justify-content: center;
+    color: lime;
+    font-size: x-large;
+
+}
+
+.welcomemessage {
+    position: relative;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: block;
+    color: aliceblue;
+    top: -150px;
+}
+
+/* The meat of the page */
+aside {
+   
+    padding: 40px;
+    border: 2px;
+    border-right-color: black;
+    border-right-style: solid;
+    font-size: 30px;
+    display: flex;
+    margin: 10px;
+    flex-flow: column;
+    max-width: 60px;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.wrapper p {
+    font-size: larger;
+    display: block;
+    position: relative;
+    left: 200px;
+    top: -100px;
+    max-width: 1440px;
+    
+}
+
+/* #about p {
+
+    }
+*/

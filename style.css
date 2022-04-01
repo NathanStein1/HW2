@@ -1,11 +1,11 @@
 /* This is the nav bar and header */
-body{
-    background-image: linear-gradient(black, black 1%, white, white 99%);
-}
-
 header {
     background-color: #202020;
-    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -15,11 +15,10 @@ header {
     color: aliceblue;
     max-width: max-content;
     position: relative;
-    top: -10px;
-    left: 10px;
     padding: 10px;
 
   }
+
 
 .navlist {
     display: flex;
@@ -28,11 +27,9 @@ header {
 }
 
 li {
-    position: relative;
-    left: -10px;
-    top: -55px;
     padding: 10px;
     font-size: large;
+
    
 }
 
@@ -49,26 +46,23 @@ li:hover {
 
 /* This is the hero img */
 
-
-
 .heroimg {
+    background-image: url(./cityskyline.jpg);
+    background-size: cover;
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    /* object-position */
-
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-/* welcomemessage, when moving the text, breaks display and makes it too wide */
 .welcomemessage {
-    position: relative;
+    position: absolute;
     color: aliceblue;
-    top: -150px;
     font-size: x-large;
     max-width: fit-content;
-    display: inline-flex;
     font-family: 'Courier New', Courier, monospace;
-    /* what does inline flex do? is this the solution? */
+    top: 50px;
+    left: 500px;
     
 }
 
@@ -77,32 +71,159 @@ span{
     font-family: "Dancing Script";
 }
 
-/* Also breaks the page when adjusting size, the problem with both of these issues is that we are setting an x, y coordinate...*/
-/* overflow?????? */
+
 aside {
-   
+    
     padding: 40px;
     border: 2px;
     border-right-color: black;
     border-right-style: solid;
     font-size: 30px;
-    display: flex;
-    flex-flow: column;
     max-width: 60px;
 }
-/* 
-aside:scroll {} want things to fade into being */
 
 
-.wrapper p {
-    font-size: larger;
-    display: block;
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 700px;
+    top: 200px;
+
+}
+
+#about p {
+   display: flex;
+   position: relative;
+   left: 200px;
+   max-width: 700px;
+   top: -100px;
+}
+/* FIX THIS SIZING ISSUE, IS IT A POSITION THING? */
+/* @media screen and (max-width) {
+    #about p {
+        width: 914px;
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------IMAGES START------------ */
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* position: absolute; PROBLEMS. START HERE FOR PROBLEM SOLVING */
+}
+
+/* projects is the parent, PROBLEMS
+.projects {
+    /* width: 100%; */
+    /* position: inherit; */
+/* } */
+
+.bigproj {
+    background-image: url(./selfie.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
     position: relative;
-    left: 200px;
-    top: -100px;
-    max-width: fit-content;
+    margin: 20px;
     
 }
+
+.label {
+    max-width: fit-content;
+    font-weight: 900;
+    font-size: x-large;
+    color: yellow
+    
+}
+
+.subproject {
+    padding: 20px;
+    width: 300px;
+    /* display: flex; */
+    /* position: absolute; THIS BREAKS BIGPROJ CLASS */
+
+}
+
+
+.sub1 {
+    background-image: url(./selfie.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+}
+
+/* -------IMAGES END--------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#contact p {
+    display: flex;
+   position: relative;
+   left: 200px;
+   max-width: 700px;
+}
+#resume {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#resume p {
+    display: flex;
+    position: relative;
+    left: 200px;
+    max-width: 700px;
+}
+
+
+
 
 #c{
     color: #FB366D;
@@ -209,15 +330,9 @@ aside:scroll {} want things to fade into being */
 
 }
 
-.wrapper img {
+/* .wrapper img {
     width: 400px;
-}
+} */
 
-.centered {
-    position: relative;
-    left: 50rem;
-    top: -300px;
-    
-}
 
 /* percentages vs using */

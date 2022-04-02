@@ -58,7 +58,7 @@ li:hover {
     align-items: flex-end;
 }
 
-/*Dont want to use top, left. to use justify content here, do I make a div around welcome message and heroimg? */
+
 .welcomemessage {
     position: absolute;
     color: aliceblue;
@@ -82,7 +82,7 @@ span {
     flex-direction: column;
     background-color: #dedef1;
 
-    /* USE THIS TO FIX THE WEIRD SPACING, try affecting aside.wrapper */
+    
 }
 
 
@@ -97,8 +97,7 @@ aside {
 
 }
 
-/* consider moving the work aside intside of bigcontainer. Consider moving asides or renamed to fix left side for more consistancy
- */
+
 
 
 #about {
@@ -117,13 +116,6 @@ p {
 
 }
 
-/* FIX THIS SIZING ISSUE, IS IT A POSITION THING? */
-/* @media screen and (max-width) {
-    #about p {
-        width: 914px;
-    }
-    
-} */
 
 
 
@@ -147,7 +139,7 @@ p {
     padding: 20px;
 
 
-    /* position: absolute; PROBLEMS. START HERE FOR PROBLEM SOLVING... Position issues?*/
+
 }
 
 
@@ -280,24 +272,6 @@ p {
 }
 
 /* -------IMAGES END--------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
